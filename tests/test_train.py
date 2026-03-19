@@ -25,6 +25,8 @@ experiments["sac-Pendulum-v1"] = ("sac", "Pendulum-v1")
 experiments["td3-Pendulum-v1"] = ("td3", "Pendulum-v1")
 # for DDPG
 experiments["ddpg-Pendulum-v1"] = ("ddpg", "Pendulum-v1")
+# for NAF
+experiments["naf-Pendulum-v1"] = ("naf", "Pendulum-v1")
 
 
 @pytest.mark.parametrize("experiment", experiments.keys())
