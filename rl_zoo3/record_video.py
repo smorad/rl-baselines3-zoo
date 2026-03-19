@@ -68,7 +68,20 @@ if __name__ == "__main__":
     )
 
     print(f"Loading {model_path}")
-    off_policy_algos = ["qrdqn", "dqn", "ddpg", "naf", "sac", "her", "td3", "tqc"]
+    off_policy_algos = [
+        "qrdqn",
+        "dqn",
+        "ddpg",
+        "diag_naf",
+        "diag_naf_lr",
+        "diag_naf_td3",
+        "naf",
+        "naf_td3",
+        "sac",
+        "her",
+        "td3",
+        "tqc",
+    ]
 
     set_random_seed(args.seed)
 

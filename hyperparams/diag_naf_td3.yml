@@ -8,6 +8,8 @@ MountainCarContinuous-v0:
   train_freq: 1
   learning_rate: !!float 1e-3
   batch_size: 256
+  target_policy_noise: 0.2
+  target_noise_clip: 0.5
   policy_kwargs: "dict(net_arch=[400, 300])"
 
 Pendulum-v1:
@@ -21,6 +23,8 @@ Pendulum-v1:
   gradient_steps: 1
   train_freq: 1
   learning_rate: !!float 1e-3
+  target_policy_noise: 0.2
+  target_noise_clip: 0.5
   policy_kwargs: "dict(net_arch=[400, 300])"
 
 LunarLanderContinuous-v3:
@@ -34,6 +38,8 @@ LunarLanderContinuous-v3:
   gradient_steps: 1
   train_freq: 1
   learning_rate: !!float 1e-3
+  target_policy_noise: 0.2
+  target_noise_clip: 0.5
   policy_kwargs: "dict(net_arch=[400, 300])"
 
 BipedalWalker-v3:
@@ -47,6 +53,8 @@ BipedalWalker-v3:
   gradient_steps: 1
   train_freq: 1
   learning_rate: !!float 1e-3
+  target_policy_noise: 0.2
+  target_noise_clip: 0.5
   policy_kwargs: "dict(net_arch=[400, 300])"
 
 # To be tuned
@@ -61,6 +69,8 @@ BipedalWalkerHardcore-v3:
   batch_size: 256
   train_freq: 1
   learning_rate: lin_7e-4
+  target_policy_noise: 0.2
+  target_noise_clip: 0.5
   policy_kwargs: "dict(net_arch=[400, 300])"
 
 # Tuned
@@ -76,6 +86,8 @@ HalfCheetahBulletEnv-v0: &pybullet-defaults
   train_freq: 1
   batch_size: 256
   learning_rate: !!float 7e-4
+  target_policy_noise: 0.2
+  target_noise_clip: 0.5
   policy_kwargs: "dict(net_arch=[400, 300])"
 
 # Tuned
@@ -102,6 +114,8 @@ HumanoidBulletEnv-v0:
   gradient_steps: -1
   train_freq: [1, "episode"]
   learning_rate: !!float 1e-3
+  target_policy_noise: 0.2
+  target_noise_clip: 0.5
   policy_kwargs: "dict(net_arch=[400, 300])"
 
 # Tuned
@@ -131,6 +145,8 @@ HalfCheetah-v4: &mujoco-defaults
   gradient_steps: 1
   learning_rate: !!float 1e-3
   batch_size: 256
+  target_policy_noise: 0.2
+  target_noise_clip: 0.5
   policy_kwargs: "dict(net_arch=[400, 300])"
 
 Ant-v4:

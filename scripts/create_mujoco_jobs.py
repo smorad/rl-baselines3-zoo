@@ -4,7 +4,7 @@ import time
 
 import numpy as np
 
-ALGOS = ["sac", "td3", "tqc"]
+ALGOS = ["sac", "td3", "tqc", "diag_naf"]
 # "Humanoid-v3",
 ENVS = ["HalfCheetah-v3", "Ant-v3", "Hopper-v3", "Walker2d-v3", "Swimmer-v3"]
 N_SEEDS = 1

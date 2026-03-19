@@ -13,7 +13,7 @@ from gymnasium import spaces
 from huggingface_hub import HfApi
 from huggingface_sb3 import EnvironmentName, ModelName
 from sb3_contrib import ARS, QRDQN, TQC, TRPO, CrossQ, RecurrentPPO
-from stable_baselines3 import A2C, DDPG, DQN, NAF, PPO, SAC, TD3
+from stable_baselines3 import A2C, DDPG, DQN, DiagNAF, DiagNAFTD3, NAF, NAFTD3, PPO, SAC, TD3
 from stable_baselines3.common.base_class import BaseAlgorithm
 from stable_baselines3.common.callbacks import BaseCallback
 from stable_baselines3.common.env_util import make_vec_env
@@ -26,8 +26,12 @@ from torch import nn as nn
 ALGOS: dict[str, type[BaseAlgorithm]] = {
     "a2c": A2C,
     "ddpg": DDPG,
+    "diag_naf": DiagNAF,
+    "diag_naf_td3": DiagNAFTD3,
+    "diag_naf_lr": DiagNAF,
     "dqn": DQN,
     "naf": NAF,
+    "naf_td3": NAFTD3,
     "ppo": PPO,
     "sac": SAC,
     "td3": TD3,

@@ -27,6 +27,14 @@ experiments["td3-Pendulum-v1"] = ("td3", "Pendulum-v1")
 experiments["ddpg-Pendulum-v1"] = ("ddpg", "Pendulum-v1")
 # for NAF
 experiments["naf-Pendulum-v1"] = ("naf", "Pendulum-v1")
+# for DiagNAF
+experiments["diag_naf-Pendulum-v1"] = ("diag_naf", "Pendulum-v1")
+# for low-rank DiagNAF
+experiments["diag_naf_lr-Pendulum-v1"] = ("diag_naf_lr", "Pendulum-v1")
+# for NAF TD3 variant
+experiments["naf_td3-Pendulum-v1"] = ("naf_td3", "Pendulum-v1")
+# for DiagNAF TD3 variant
+experiments["diag_naf_td3-Pendulum-v1"] = ("diag_naf_td3", "Pendulum-v1")
 
 
 @pytest.mark.parametrize("experiment", experiments.keys())
